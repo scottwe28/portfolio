@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Guitar Maker</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type="text/css">
+            * {
+                margin: 0;
+                border: 0;
+                padding: 0;
+            }
+            body {
+                background: #f0f0f0;
+                font: 14px/20px Arial, San-Serif;
+                color: #ff6666;
+                margin: 0;
+
+            }
+            h1{
+                text-align: center;
+                font-size: 180%;
+                line-height: 120%;
+                padding: 5% 0;
+            }
+            h2{
+                text-decoration: underline;
+                line-height: 280%;
+                padding-left: -10%;
+            }
+            h3{
+                line-height: 110%;
+                padding: 5% 0;
+
+            }
+
+
+            p{
+                padding: 1%;
+            }
+            img{
+                text-align: center;
+                max-width: 100%;
+                height: auto;
+                width: auto;
+            }
+            a{
+                color: #000000;
+                text-decoration: none;
+                font-weight: bold;
+
+            }
+            a:hover{
+                color: #3366ff;
+                text-decoration: underline;
+            }
+            header{
+                background: #ff3333;
+                width: 100%;
+                height: 86px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 100;
+                opacity: 0.90;
+            }
+            #logo{
+                margin: 20px;
+                float: left;
+                width: 200px;
+                height: 60px;
+                /*                background: url(https://global.handelsblatt.com/wp-content/themes/handelsblatt-global/assets/img/social/googleplay.png) left; */
+
+
+            }
+            nav{
+                float: right;
+                padding: 35px 20px 20px 0;
+            }
+            #menu-icon{
+                display: hidden;
+                width: 40px;
+                height: 40px;
+                background: url(http://www.w3newbie.com/wp-content/uploads/icon.png) center;
+            }
+            a:hover#menu-icon{
+                border-radius: 4px 4px 0 0;
+            }
+            ul{
+                list-style: none;
+            }
+            nav ul li{
+                display: inline-block;
+                float: left;
+                padding: 10px;
+            }
+            .current{
+                color: #FFF;
+                text-decoration: underline;
+            }
+            #doc{
+                margin: 40px 0;
+            }
+            #content{
+                margin: 0 auto;
+                max-width: 1140px;
+            }
+            .az{
+                max-width: 960px;
+                margin-top: 110px;
+            }
+            section{
+                width: 29%;
+                float: left;
+                margin: 2% 2%;
+                text-align: center;
+            }
+            .clear{
+                clear: both;
+            }
+            article {
+                float: left;
+                margin: 0 auto;
+                width: 50%;
+                height: auto;
+                padding: 4%;
+            }
+            aside{
+                float: right;
+                margin: 0 auto;
+                width: 35%;
+                height: auto;
+                padding: 3%;
+            }
+            ul.azz li{
+                padding-left: 3%;
+            }
+            footer{
+                background: #ff3333;
+                width: 100%;
+                overflow: hidden;
+                opacity: 0.90;
+            }
+            footer p, footer h3 {
+                color: #FFF;
+            }
+            footer p a {
+                color: #FFF;
+                text-decoration: none;
+            }
+            ul.social li {
+                display: inline;
+            }
+            ul.social li img{
+                height: 50px;
+            }
+            footer.second{
+                border-top: 1px solid #4D4E50;
+                background-color: #333333;
+                max-height: 50px;
+                text-align: center;
+                opacity: 0.95;
+            }
+            @media screen and(max-width: 478px){
+                body{
+                    position: absolute;
+                }
+            }
+            @media screen and(max-width: 478px){
+                header{
+                    position: absolute;
+                }
+                #menu-icon{
+                    display: inline-block;
+                }
+                nav ul, nav:active ul {
+                    display: none;
+                    position: absolute;
+                    padding: 20px;
+                    background: #ff3333;
+                    border: 1px solid #FFF;
+                    right: 20px;
+                    top: 60px;
+                    width: 50%;
+                    border-radius: 2px 0 2px 2px;
+                }
+                nav li {
+                    text-align: center;
+                    width: 100%;
+                    padding: 10px 0;
+                    margin: 0;
+                }
+                nav:hover ul {
+                    display: block;
+                }
+                section{
+                    float: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+                article{
+                    float: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+                aside{
+                    float: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        </style>
+
+
+    <header>
+        <a href="https://play.google.com/store" id="logo">
+            <img src="https://global.handelsblatt.com/wp-content/themes/handelsblatt-global/assets/img/social/googleplay.png">
+        </a>
+        <nav>
+            <a href="#" id="menu-icon"></a>
+            <ul>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="GuitarMaking.html">Guitar Making</a></li>
+                <!--                    <li><a href="#">Guitars Ideas</a></li>
+                                    <li><a href="#">Guitars Prices</a></li>
+                                    <li><a href="#">Guitars Shipping</a></li>-->
+                <li><a href="signUp.html">Sign up</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--        <h4>Guitar Maker</h4>-->
+    <div id="doc">
+        <div id="content">
+            <div class="az">
+                <ul class="slides">
+                    <li><img src="https://s-media-cache-ak0.pinimg.com/originals/3e/5c/f5/3e5cf50d83106fa01894eab70a332162.jpg" /></li>
+                    <li><img src="https://cdn.simplesite.com/i/91/4a/282600883346688657/i282600889598711192._szw1280h1280_.jpg" /></li>
+                    <!--                                                <li><img src="https://s-media-cache-ak0.pinimg.com/originals/c2/90/d0/c290d012df9f4c5f722602f8e814d994.jpg" /></li>-->
+                    <li><img src="https://blogs-images.forbes.com/shawnsetaro/files/2017/02/fender-am-pro-image-1200x439.jpg?width=960" /></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+    <article>
+        <img src="https://rockzzlanka.files.wordpress.com/2014/10/wpid-gm-student.jpeg"/>
+    </article>
+    <aside>
+        <h2>Guitar Maker Prototype</h2>
+        <ul class="guitar">
+            <li><h3><a href="Acoustic.html"/>Acoustic</a></h3></li>
+            <li><h3><a href="Electric.html"/>Electric</a></h3></li>
+            <!--                        <li><h3><a href="Acoustic-Electric.html"/>Acoustic-Electric</a></h3></li>-->
+            <li><h3><a href="Bass.html">Bass</a></h3></li>
+            <li><h3><a href="ideas.html"/>Share Your Ideas</a></h3></li>
+        </ul>
+    </aside>
+    <div class="clear"></div>
+    <section>
+        <h1></h1>
+        <img src="https://cdn.shopify.com/s/files/1/0411/5045/files/DSC_5277-2_grande.jpg?1247" />
+        <p></p>
+    </section>
+    <section>
+        <h1></h1>
+        <img src="https://s-media-cache-ak0.pinimg.com/originals/cf/bc/4f/cfbc4fb4d97389ca33abe19ceacffa79.jpg" />
+        <p></p>
+    </section>
+    <section>
+        <h1></h1>
+        <img src="https://s-media-cache-ak0.pinimg.com/originals/c4/78/88/c47888218237076580b027408a9a0da2.jpg" />
+        <p></p>
+    </section>
+    <footer>
+        <section>
+            <h3><b>Guitar Maker</b></h3>
+            <p><b>1-800-324-5467</b><br><br>
+                15 Morris Drive<br>
+                Mansfield, PA 16933<br>
+                guitarmakers@gmaker.com<br>
+            </p>
+
+        </section>
+        <section>
+            <h3>Share With Your Friends</h3>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/"><img src="http://www.w3newbie.com/wp-content/uploads/facebook1.png" /></a></li>
+                <li><a href="https://plus.google.com/explore"><img src="http://www.w3newbie.com/wp-content/uploads/googleplus.png" /></a></li>
+                <li><a href="https://twitter.com/"><img src="http://www.w3newbie.com/wp-content/uploads/twitter1.png" /></a></li>
+                <li><a href="https://www.youtube.com/"><img src="http://www.w3newbie.com/wp-content/uploads/youtube1.png" /></a></li>
+            </ul>
+
+        </section>
+        <section>
+            <img src="https://s-media-cache-ak0.pinimg.com/200x150/ab/9d/21/ab9d212cbcda1b9c6d8c92ac228ed614.jpg"/>
+        </section>
+
+    </footer>
+    <footer class ="second">
+        <p>Guitar Maker 2017 By Willie Scott</p>
+    </footer>
+</body>
+
+</html>
